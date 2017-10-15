@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+i = 0
+until i == 5 do
+  Post.create(title: Faker::Coffee.blend_name, body: Faker::Coffee.notes.capitalize + ' from ' + Faker::Coffee.origin)
+  i += 1
+end
