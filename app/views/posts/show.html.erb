@@ -1,2 +1,9 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h3><%= @post.title %></h3>
+<p class="post-body"><%= @post.body %></p>
+<div class="maps">
+  <iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_ACCESS_TOKEN'] %>&q=<%= @post.location %>" allowfullscreen>
+</iframe>

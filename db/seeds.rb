@@ -8,6 +8,7 @@
 
 i = 0
 until i == 5 do
-  Post.create(title: Faker::Coffee.blend_name, body: Faker::Coffee.notes.capitalize + ' from ' + Faker::Coffee.origin)
+  bean_location = Faker::Coffee.origin
+  Post.create(title: Faker::Coffee.blend_name, body: Faker::Coffee.notes.capitalize + " from #{bean_location}", location: bean_location)
   i += 1
 end
