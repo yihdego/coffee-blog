@@ -1,6 +1,9 @@
+<h2><a href="/posts/new">Make a new Post</a></h2>
 <% Post.all.reverse.each do |post| %>
 
   <h3><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
   <p class="post-body"><%= post.body %></p>
+
+
 
 <% end %>
