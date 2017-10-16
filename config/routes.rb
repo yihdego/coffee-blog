@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'posts/create'
+
   get 'upvotes/new'
 
   get 'upvotes/create'
@@ -27,7 +29,7 @@ Rails.application.routes.draw do
 
   get 'posts/new'
 
-  get 'posts/create'
+
 
   get 'posts/show'
 

@@ -6,6 +6,7 @@ class CommentsController < ApplicationController
   end
 
   def create
+
   end
 
   def show
